@@ -1,7 +1,7 @@
 .. aboutAbruan
 
-AbRuAn: an Aero-optical Simulation Framework
-============================================
+AbRuAn: Planetary Aero and Plasma Optics Simulation Framework
+==============================================================
 
 .. sidebar:: Vision
 
@@ -25,6 +25,11 @@ Architecture
 -----------------
 Abruan was first developed in MATLAB with GUI created using the App Designer. It was packaged as a standalone application which required downloading MATLAB Runtime (MCR) at the first instance of use if MATLAB is not installed on the host computer. The first release was in 2020. Current development is underway for re-architecting the framework for faster execution, flexibility of reconfiguration and analysis options, and multi-species modeling in planetary atmospheres such as that of Mars.
 
+The new architecture uses frames and domains as the basis. Flowfield, if comupted using external solver, can be read and used for aero-optics.
+
+.. image:: _images/abruan_architecture.jpeg 
+   :align: center
+
 Relevant Publications
 ----------------------
 - Gupta, A.; "`Analytical Theory of Aero-Optical and Atmospheric Effects in Supersonic and Hypersonic Flows. <https://scholar.colorado.edu/concern/graduate_thesis_or_dissertations/mg74qn20w>`_” Master’s thesis, the University of Colorado at Boulder, 2020.
@@ -40,6 +45,7 @@ Relevant Publications
    :caption: AbRuAn:
 
    rst/install
+   rst/learning
    rst/example
 
 .. Indices and tables
